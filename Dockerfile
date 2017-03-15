@@ -3,3 +3,4 @@ RUN echo "@edge http://nl.alpinelinux.org/alpine/edge/main">>/etc/apk/repositori
     apk update && \
     apk add ansible@edge curl openssh-client bash git
 ADD prom-run /
+ENTRYPOINT /prom-run
